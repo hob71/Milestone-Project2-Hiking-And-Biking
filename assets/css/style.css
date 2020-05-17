@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+
+body {
+    font-family:  'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------nav bar-----------------*/
+
+.menu {
+    margin: 20px 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu_image {
+    align-content: right;
+}
+
+.fas {
+    font-size: 30px;
+    margin: 20px 30px;
+    text-align: right;
+}
+
+
+
+
+
+/*-------------------banner-----------------*/
+
+.mountains-banner {
+    background: url("../images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    min-height: 500px;
+}
+
+.mountains-banner > h1 {
+    padding-top: 35px;
+    text-align: center;
+    font-size: 120px;
+}
+
+.mountains-banner > h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+/*-------------------about-----------------*/
+
+.about-area {
+    min-height: 21vh;
+}
+
+.about-area p {
+    padding: 35px auto;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+
+/*-------------------footer-----------------*/
+
+footer {
+    padding: 0;
+}
+
+#social {
+    padding: 0;
+    margin-bottom: 0;
+    min-height: 70px;
+    text-align: left;
+    margin-top: 35px;
+}
+
+#social > li {
+    display: inline;
+    padding-left: 20px;
+}
+
+
+
+footer i {
+    font-size: 220%;
+}
+
+footer li {
+    line-height: 100%;
+}
+
+.contact i {
+    font-size: 92%;
+}
+
+.contact {
+    text-align: right;
+    padding-right: 70px;
+    margin-top: 40px;
+}
+
+
+/*-------------------colours-----------------*/
+
+.menu-row, footer {
+    background-color: rgb(5, 28, 102);
+}
+
+.menu,  footer i, .contact, .fas {
+    color: #ff6c00
+}
+
+.mountains-banner > h3 {
+    color: #f24907;
+}
+
+.about-area {
+    background-color: #070335;
+    color: #f24907;
+}
+
+
+
+
+
+@media screen and (max-width: 579px) {
+body {
+    font-family:  'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.mountains-banner > h1 {
+    padding-top: 35px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.mountains-banner {
+    background: url("../images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    min-height: 250px;
+}
+
+.about-area p {
+    padding: 35px auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+}
