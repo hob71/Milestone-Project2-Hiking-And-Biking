@@ -14,6 +14,8 @@
       src="https://kit.fontawesome.com/f51253fd7a.js"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" 
+        src="//www.outdooractive.com/alpportal/oa_head.js?proj=api-dev-oa&amp;key=yourtest-outdoora-ctiveapi&amp;lang=en"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Hiking and Biking</title>
   </head>
@@ -34,7 +36,7 @@
 
     <!--header-->
     <header>
-      <div class="container-fluid mountains-banner">
+         <div class="container-fluid mountains-banner">
         <h1>Hiking and Biking</h1>
         <h3 class="d-none d-sm-block">Adventures in the great outdoors</h3>
       </div>
@@ -42,33 +44,73 @@
 
     <!--about-->
 
-    <section>
-      <div class="about-area">
+        <section class="row container-hiking">
+<div class="container map-area">
+        <div class="oax-top-cont map-box"></div>
+</div>
 
+<script type="text/javascript">
+
+  var conf = {
+      frontendtype:   "tour",          // choose content type
+      zoom:           2,              // set initial zoom level
+      center:       [ 47.63354, 7.47712 ] // set initial map center
+  };
+  
+  var fvp = oa.api.flexviewpage( conf );
+
+
+</script>
+
+
+       <!-- <div class="col-12">10.292, 47.546
+      <div class="col-6 hiking-search">
         <p>
-          Welcome to Hiking and Biking. A website for seaching new hiking and
-          biking trail across the world. Find something interesting then you can
-          also search for hotels in the area.
+            Please enter your search criteria below. We will match your data with the best trails we can find:
         </p>
-        <a href="//www.outdooractive.com"
-   title="This website uses technology and content from the Outdooractive Platform.">
-  <img src="//res.oastatic.com/partner/outdooractive-black.png" alt="outdooractive" />
-  This website uses technology and content from the Outdooractive Platform.
-</a>
-        <p><b>Lets Get Started</b></p>
-
+        <form>
+            <div class="form-selection">
+               <label for="level">Difficulty</label>
+                    <select class="form-control" id="level">
+                        <option>Easy</option>
+                        <option>Medium</option>
+                        <option>Expert</option>
+                    </select>
+             </div>
+             <div>
+                <label for="location">Difficulty</label>
+                    <select class="form-control" id="location">
+                        <option>Easy</option>
+                        <option>Medium</option>
+                        <option>Expert</option>
+                    </select>
+             </div>
+             <div>
+                <label for="type">Difficulty</label>
+                    <select class="form-control" id="type">
+                        <option>Easy</option>
+                        <option>Medium</option>
+                        <option>Expert</option>
+                    </select>
+             </div>
+             <div>
+                <label for="duration">duration</label>
+                    <select class="form-control" id="duration">
+                        <option>Easy</option>
+                        <option>Medium</option>
+                        <option>Expert</option>
+                    </select>
+             </div>
+             <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </div>
+        </form>
       </div>
-    </section>
-
-    <!--Selection-->
-    <section>
-      <div class="row select-image">
-      <div class="col-12 col-sm-6 hikers"><a class="btn btn-primary" href="trails.html" role="button"><i class="fas fa-hiking"></i> Lets Hike</a></div>
-        <div class="col-12 col-sm-6 bikers"><a class="btn btn-primary" href="biking.html" role="button"><i class="fas fa-biking"></i> Lets Ride</a></div>
-
-        <!--<img class="col-12 col-sm-6" src="assets/images/hikers.jpg" alt="Family of hikers" /><a class="btn btn-primary" href="hiking.html" role="button">Lets Hike</a>
-        <img class="col-12 col-sm-6" src="assets/images/bikes.jpg" alt="Two people on mountain bikes" /><a class="btn btn-primary" href="biking.html" role="button">Lets Ride</a>-->
+    
+      <div class="row hikers-image">
+        <img class="col-12" src="assets/images/hikers.jpg" alt="Family of hikers" />
       </div>
+        </div>-->
     </section>
 
     <!--footer begin-->
